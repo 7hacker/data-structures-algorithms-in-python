@@ -1,0 +1,6 @@
+{'bat': 1}
+{'bat': 1, 'cat': 1}
+{'bat': 1, 'hat': 1, 'cat': 1}
+->bat->cat->hat->had
+{'bat': 1, 'hat': 1, 'bad': 1, 'cat': 1}
+->bat->bad->had
