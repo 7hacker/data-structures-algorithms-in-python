@@ -35,6 +35,12 @@ def buildMinSegTree(t, n, start, end, ti):
 		t[ti] = min(left, right)
 		return t[ti]
 
+def querySegTree(t, i, j):
+	#query the result of range i-j where i <= j
+	if i > j:
+		return None
+	else:
+		
 
 
 nums = [1,3,5,7, 9, 11]

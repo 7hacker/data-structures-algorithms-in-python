@@ -18,4 +18,5 @@ def pascal(n):
 		result.append(p)
 	for r in result:
 		print(r)
+		
 pascal(6)
