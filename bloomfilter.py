@@ -46,7 +46,7 @@ def loadBloomFilter(bf, f):
 
 
 if __name__ == '__main__':
-	bf = BloomFilter(pow(2,20), 3)
+	bf = BloomFilter(15485863, 3)
 	loadBloomFilter(bf, "/usr/share/dict/words")
 	print("Apple: " + str(bf.test("apple")))
 	print("Orange: " + str(bf.test("OrANGe")))
