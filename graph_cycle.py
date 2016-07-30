@@ -8,6 +8,41 @@ def visit(node):
 	return
 
 
+def detectCycle(g):
+	'''
+	#using clrs method of finding cycles by marking nodes by colors:
+	white(0) indicates this node was never seen
+	gray(1) indicates this node is currently being processed
+	black(2) indicates this node is done
+	if in a dfs visit a gray node is encoutnered a cycle is found
+	https://algocoding.wordpress.com/2015/04/02/detecting-cycles-in-a-directed-graph-with-dfs-python/comment-page-1/
+	'''
+	color = {}
+	for v in g.getVertices():
+		color[v] = 0 #set to white
+	found_cycle = [False]
+	for v in g.getVertices():
+		if not color[v]: #if node is white
+			findCycle(g, v, color, found_cycle)
+		if found_cycle[0]:
+			break
+	return found_cycle[0]
+
+
+def findCycle(g, v, color, found_cycle):
+	if found_cycle[0]:
+		return True
+	color[v] = 1 #set to gray
+	vNode = g.getVertex(v)
+	for neighbor in vNode.getConnections():
+		if color[neighbor.getId()] == 1 :
+			found_cycle[0] = True
+			return
+		if color[neighbor.getId()] == 0:
+			findCycle(g, neighbor.getId(), color, found_cycle)
+	color[v] = 2 #set to black since you are done
+
+
 def dfs(g, startAt, visited):
 	startNode = g.getVertex(startAt)
 	if not visited[startAt]:
@@ -27,27 +62,20 @@ def dfs_init(g, startAt):
 	dfs(g, startAt, visited)
 	return
 
-#Build a graph with a cycle
+#Build a graph
 g = Graph()
 for i in range(6):
 	g.addVertex(i)
+g.addEdge(0,1)
 g.addEdge(0,2)
-g.addEdge(0,5)
+g.addEdge(0,3)
 g.addEdge(0,4)
-g.addEdge(4,0)
-g.addEdge(4,5)
-g.addEdge(2,5)
-g.addEdge(2,1)
-g.addEdge(1,0)
-g.addEdge(3,1)
-g.addEdge(3,6)
-g.addEdge(6,3)
-g.addEdge(6,5)
+g.addEdge(0,5)
 
 #Print the graph
-
 for v in g:
 	for w in v.getConnections():
 		print(str(v.getId()) + "->" + str(w.getId()))
 
-dfs_init(g, 3)
+print(detectCycle(g))
+#dfs_init(g, 3)

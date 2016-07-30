@@ -1,5 +1,5 @@
 '''
-detect if a graph has a cycle or not
+graph dfs traversal
 '''
 from graph import Graph
 
