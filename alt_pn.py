@@ -1,3 +1,6 @@
+'''
+alt_pn.py : Take a list of positive and negative integers, and return a list with negative numbers on left and positive numbers on right while also mantaining the order of numbers in input list
+'''
 def alt_pn2(nums):
     #without extra space
     return

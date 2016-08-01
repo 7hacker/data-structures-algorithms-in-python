@@ -1,5 +1,5 @@
 '''
-detect if a graph has a cycle or not
+graph_cycle.py : detect if a graph has a cycle or not
 '''
 from graph import Graph
 
