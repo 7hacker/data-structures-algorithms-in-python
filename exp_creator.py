@@ -1,3 +1,6 @@
+'''
+Given some number eg n= 222 and k=24 and a set of operations: Join, Add, Multiply, verify if k can be formed by applying the operations on n. The combination of operatsion on N leads to : 222 (all joins), 2+22(Add, Join), 2*22(Multiple,Join), 22+2,22*2 and so on..
+'''
 def evaluate_exp(expi):
 	exp = list(expi)
 	#A terrible expression evaluator

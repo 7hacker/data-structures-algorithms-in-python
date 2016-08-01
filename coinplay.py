@@ -1,3 +1,6 @@
+'''
+you and your friend are playing a game with coins, such that each coin has a value, and you can pick a coin from the start of a list or end of a list. If you begin first, and your friend is equally competent as you, what is the best choice you can make?
+'''
 from rcviz import callgraph, viz
 
 @viz

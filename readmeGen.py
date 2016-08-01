@@ -32,5 +32,7 @@ for f in files:
 		if lines[0] == MARKER and lines[-1] == MARKER:
 			rop.write(f + " : " + lines[1] + "\n")
 			rop.write("\n")
+		else:
+			print("Missed file: " + f)
 
 rop.close()

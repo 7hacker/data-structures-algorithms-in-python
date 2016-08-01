@@ -1,3 +1,6 @@
+'''
+Given a number what is the immediate next Palindrome number? Example, given 135, output should be 141
+'''
 def nextPalindrome(num):
     length=len(str(num))
     oddDigits=(length%2!=0)

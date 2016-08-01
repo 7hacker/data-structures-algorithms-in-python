@@ -1,3 +1,6 @@
+'''
+Given a binary tree is it a Binary search tree?
+'''
 import sys
 
 class Node:

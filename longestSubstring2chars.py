@@ -1,7 +1,5 @@
 '''
-size of Longest substring with at most two distinct characters
-eg: s = "eceba"
-output : 3 ("ece")
+what is the size of Longest substring with at most 2 distinct characters eg: s = "eceba" output : 3 ("ece")
 '''
 
 

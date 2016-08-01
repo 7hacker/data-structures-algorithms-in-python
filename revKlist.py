@@ -1,3 +1,6 @@
+'''
+given a linked list and a value K, generate a linked list such that upto K elements are reversed. example for input 1,2,3,4,5,6,7,8 and k=5 the output list is: 5,4,3,2,1,8,7,6
+'''
 class Node:
 	def __init__(self, data):
 		self.data = data

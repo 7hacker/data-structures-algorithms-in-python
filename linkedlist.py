@@ -1,3 +1,6 @@
+'''
+Linked lists in Python using a Node abstraction
+'''
 class Node():
 	def __init__(self):
 		self.data = None

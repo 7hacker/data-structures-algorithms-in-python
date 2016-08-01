@@ -1,3 +1,6 @@
+'''
+implement a stack with the usual stack semantics but additionally also returns the Minimum value in the stack in O(1)
+'''
 class Stack(object):
     
     def __init__(self):

@@ -1,6 +1,5 @@
 '''
-Given 2 arrs: Short and Long of same size (n), that are already sorted
-return the sorted long array in linear time, merging the two arrays
+Given 2 arrs: Short and Long of same size (n), that are already sorted return the sorted long array in linear time, merging the two arrays
 '''
 
 

@@ -1,3 +1,6 @@
+'''
+how many ways to make change of k, given a set of coins
+'''
 def ways_to_make_change(coins, target, ways):
 	if target < 0:
 		return
