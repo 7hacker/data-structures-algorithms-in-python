@@ -1,3 +1,6 @@
+'''
+Given a string of 0's, 1's and ?'s print out all the possible results where ?'s can be substituted for 0 or 1
+'''
 from rcviz import callgraph, viz
 
 @viz

@@ -1,3 +1,6 @@
+'''
+A segment tree of Min values
+'''
 from rcviz import callgraph, viz
 
 def find_segment_tree_size(n):

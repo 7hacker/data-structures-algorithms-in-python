@@ -1,3 +1,6 @@
+'''
+Generate Numeronyms for a word upto size 2: Example: "nailed" can be compressed to n4d, na3d, n3ed, n2led, na2ed, nai2d
+'''
 def rec_swallow(s, index, n):
 	'''
 	recursive swallow: prints out if it can swallow and calls itself recursively

@@ -1,3 +1,6 @@
+'''
+what are the structurally unique binary trees that can be formed for size n?
+'''
 from rcviz import callgraph, viz
 
 num_trees_result = {}

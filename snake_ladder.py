@@ -1,3 +1,6 @@
+'''
+snake & ladder game
+'''
 import sys
 
 class Cell:

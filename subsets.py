@@ -1,3 +1,6 @@
+'''
+print all subsets of a given array/list
+'''
 from rcviz import callgraph, viz
 
 @viz

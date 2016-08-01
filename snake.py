@@ -1,3 +1,6 @@
+'''
+print a string sinusoidally
+'''
 def  printSnakeString():
 	s = "Google Worked"
 	result = []
