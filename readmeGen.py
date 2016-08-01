@@ -8,13 +8,12 @@ MARKER = "'''"
 README_DUMP = """
 Auto Generated README File
 --------------------------
-Wrangling with a Python
-	-- Just a bunch of katas with Python
-	-- Algorithms + data structures + whatever else the mind wants to play with
-    -- Some recursive code uses rcviz for visualization of a recursive tree - cool stuff! see the rcviz fork.
-    -- Some code uses non-standard libraries
-
-
+Wrangling with a Python\n
+\t -- Just a bunch of katas with Python\n
+\t -- Algorithms + data structures + whatever else the mind wants to play with\n
+\t -- Some recursive code uses rcviz for visualization of a recursive tree - cool stuff! see the rcviz fork.\n
+\t -- Some code uses non-standard libraries\n
+\n
 """
 README_FNAME = "README.md"
 
