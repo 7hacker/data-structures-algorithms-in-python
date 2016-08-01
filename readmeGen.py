@@ -1,5 +1,5 @@
 '''
-readmeGen.py : Built this README File
+Built this README File
 '''
 import os, sys
 
@@ -30,7 +30,7 @@ for f in files:
 		for i in range(NUM_LINES):
 			lines.append(fop.readline().rstrip())
 		if lines[0] == MARKER and lines[-1] == MARKER:
-			rop.write(lines[1] + "\n")
+			rop.write(f + " : " + lines[1] + "\n")
 			rop.write("\n")
 
 rop.close()

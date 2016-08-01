@@ -1,5 +1,5 @@
 '''
-bloomfilter.py : a bloom filter of /usr/share/dict/words
+a bloom filter of /usr/share/dict/words
 '''
 from bitarray import bitarray
 import mmh3

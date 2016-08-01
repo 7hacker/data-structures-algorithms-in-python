@@ -1,5 +1,5 @@
 '''
-array_product.py : for an input array [1,2,3] return back an array where each i is a product of elements before i and after i, excluding i. In this example the output is: [6, 3, 2]
+for an input array [1,2,3] return back an array where each i is a product of elements before i and after i, excluding i. In this example the output is: [6, 3, 2]
 '''
 
 def array_product(nums):

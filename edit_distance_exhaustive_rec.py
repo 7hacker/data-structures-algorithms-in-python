@@ -1,3 +1,6 @@
+'''
+Edit distance using Exhaustive Search
+'''
 from rcviz import callgraph, viz
 
 #@viz

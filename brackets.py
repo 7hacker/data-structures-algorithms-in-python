@@ -1,4 +1,6 @@
-#http://stackoverflow.com/questions/727707/finding-all-combinations-of-well-formed-brackets
+'''
+http://stackoverflow.com/questions/727707/finding-all-combinations-of-well-formed-brackets
+'''
 
 d = dict()
 

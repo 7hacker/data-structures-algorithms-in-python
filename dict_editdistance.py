@@ -1,8 +1,5 @@
 '''
-Edit distance dicitonary problem:
-given a dictionary of words : {cat, bat, hat, bad, had}
-and two strings a, b: a = bat, b = had
-how to convert a->b by changing only 1 char at a time
+Edit distance dicitonary problem: given a dictionary of words : {cat, bat, hat, bad, had} and two strings a, b: a = bat, b = had how to convert a->b by changing only 1 char at a time
 '''
 
 from graph import Graph

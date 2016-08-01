@@ -1,3 +1,6 @@
+'''
+How to build a Shell-esque Prompt interface using python
+'''
 from cmd import Cmd
 
 class MyPrompt(Cmd):

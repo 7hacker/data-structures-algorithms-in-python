@@ -1,5 +1,5 @@
 '''
-graph_dfs.py : graph dfs traversal
+graph dfs traversal
 '''
 from graph import Graph
 
