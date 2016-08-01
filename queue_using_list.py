@@ -1,3 +1,6 @@
+'''
+A Queue using Python Lists
+'''
 class Queue:
 	def __init__(self):
 		self.items = list()

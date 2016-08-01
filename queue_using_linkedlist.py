@@ -1,3 +1,6 @@
+'''
+A Queue using Linked List style Nodes
+'''
 class Node:
 	def __init__(self):
 		self.data = None

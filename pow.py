@@ -1,3 +1,6 @@
+'''
+Implement the pow function efficiently
+'''
 def foo_pow(d, p):
 	if p == 1:
 		return d

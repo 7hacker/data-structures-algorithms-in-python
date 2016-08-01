@@ -1,3 +1,6 @@
+'''
+A priority Queue
+'''
 class Node:
 	def __init__(self, data, priority):
 		self.data = data

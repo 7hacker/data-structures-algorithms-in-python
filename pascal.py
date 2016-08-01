@@ -1,3 +1,6 @@
+'''
+Print out the pascal triangle for value: n
+'''
 def pascal(n):
 	result = []
 	p_one = [1]

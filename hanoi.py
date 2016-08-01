@@ -1,3 +1,6 @@
+'''
+tower of haoi
+'''
 from rcviz import callgraph, viz
 
 @viz

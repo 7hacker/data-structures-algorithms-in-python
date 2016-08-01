@@ -1,3 +1,6 @@
+'''
+A queue using Linked list with forward and back pointers
+'''
 class Node:
 	def __init__(self):
 		self.data = None

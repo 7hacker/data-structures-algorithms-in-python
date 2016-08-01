@@ -1,3 +1,6 @@
+'''
+Given strings ab, cd and cadb, verify that cadb is an interleaved string of ab and cd. interleaved strings can be formed by choosing one element from each of the input strings, while mantaining the original order.cadb is a valid interleave, since the elements appear in the original order of the inputs ab and cd
+'''
 from rcviz import callgraph, viz
 
 @viz

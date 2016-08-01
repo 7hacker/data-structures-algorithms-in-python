@@ -1,3 +1,6 @@
+'''
+What houses must a robber steal from, to get max value, if houses are indicated by value and adjacent houses cannot be stolen
+'''
 from rcviz import callgraph, viz
 
 def robber_iterative(houses, cache):

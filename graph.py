@@ -1,3 +1,6 @@
+'''
+Build your own graph using this Graph Library
+'''
 class Vertex:
     def __init__(self,key):
         self.id = key
