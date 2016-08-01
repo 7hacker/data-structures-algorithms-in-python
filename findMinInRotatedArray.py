@@ -1,5 +1,5 @@
 '''
-
+Find the minimum element in a sorted array that has been rotated (rotated from the right end any number of times)
 '''
 def find_min_in_rotated_array(nums):
 	start = 0
