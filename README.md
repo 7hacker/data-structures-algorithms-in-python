@@ -65,6 +65,8 @@ longestSubstring2chars.py : what is the size of Longest substring with at most 2
 
 merge2arrs.py : Given 2 arrs: Short and Long of same size (n), that are already sorted return the sorted long array in linear time, merging the two arrays
 
+minimumWindowSubstring.py : Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n). For example, S = "ADOBECODEBANC" T = "ABC" . Minimum window is "BANC".
+
 minstack.py : implement a stack with the usual stack semantics but additionally also returns the Minimum value in the stack in O(1)
 
 nextPalin.py : Given a number what is the immediate next Palindrome number? Example, given 135, output should be 141
@@ -87,6 +89,8 @@ queue_using_list.py : A Queue using Python Lists
 
 readmeGen.py : Built this README File
 
+regExMatcher.py : Build a regex Matcher for . (dot matches any single char) and * (asterix matches zero or more of the preceeding char). Given a string and a pattern(that contains dot and ansterix), output True or False if the string matches the pattern
+
 revKlist.py : given a linked list and a value K, generate a linked list such that upto K elements are reversed. example for input 1,2,3,4,5,6,7,8 and k=5 the output list is: 5,4,3,2,1,8,7,6
 
 robber.py : What houses must a robber steal from, to get max value, if houses are indicated by value and adjacent houses cannot be stolen
@@ -100,6 +104,8 @@ segment_tree.py : A segment tree of Min values
 snake.py : print a string sinusoidally
 
 snake_ladder.py : snake & ladder game
+
+stack.py : Get a stack by using this Lib
 
 subsets.py : print all subsets of a given array/list
 
