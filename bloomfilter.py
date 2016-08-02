@@ -56,7 +56,7 @@ if __name__ == '__main__':
 	print("Green: " + str(bf.test("green")))
 	print("Nirmal: " + str(bf.test("nirmal")))
 	print("Adriana: " + str(bf.test("adriana")))
-	print("InterviewKickstart: " + str(bf.test("interviewkickstart")))
+	print("HappyHalloween!!: " + str(bf.test("HappyHalloween")))
 	print("Bazzzinnnggaaa!!: " + str(bf.test("Bazzzinnnggaaa")))
 	#bf.showBloom()
 
