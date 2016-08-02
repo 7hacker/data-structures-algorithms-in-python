@@ -14,14 +14,12 @@ def recursivePerm(s, chosen):
 		chosen_list.append(c)
 	i = 0
 	while i < len(s):
-		if str(i) in chosen_list:
-			pass
-		else:
+		if str(i) not in chosen_list:
 			recursivePerm(s, chosen+str(i))
 		i = i + 1
 
 
-s = "abc"
+s = "abb"
 i = 0
 while i < len(s):
 	recursivePerm(s, str(i))
