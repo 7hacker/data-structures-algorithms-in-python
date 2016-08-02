@@ -107,6 +107,8 @@ snake_ladder.py : snake & ladder game
 
 stack.py : Get a stack by using this Lib
 
+stringPermutations.py : Write a recursive function for generating all permutations of an input string.  To start, assume every character in the input string is unique.
+
 subsets.py : print all subsets of a given array/list
 
 subtrees.py : what are the structurally unique binary trees that can be formed for size n?
