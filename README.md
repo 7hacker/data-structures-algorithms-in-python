@@ -97,6 +97,8 @@ queue_using_linkedlist.py : A Queue using Linked List style Nodes
 
 queue_using_list.py : A Queue using Python Lists
 
+quicksort.py : Quicksort!
+
 readmeGen.py : Built this README File
 
 regExMatcher.py : Build a regex Matcher for . (dot matches any single char) and * (asterix matches zero or more of the preceeding char). Given a string and a pattern(that contains dot and ansterix), output True or False if the string matches the pattern. Example : c*a*b matches aab and .* matches ab
