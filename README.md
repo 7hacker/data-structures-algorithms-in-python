@@ -49,6 +49,8 @@ find_majority.py : Find the majority element in a list/array if the majority ele
 
 findMinInRotatedArray.py : Find the minimum element in a sorted array that has been rotated (rotated from the right end any number of times)
 
+genPrimes.py : Generate some Primes using a bit array - a cool technique I learnt
+
 graph.py : Build your own graph using this Graph Library
 
 graph_cycle.py : detect if a graph has a cycle or not
@@ -73,6 +75,8 @@ minstack.py : implement a stack with the usual stack semantics but additionally 
 
 nextPalin.py : Given a number what is the immediate next Palindrome number? Example, given 135, output should be 141
 
+num_univalTrees.py : Given a binary tree, return the number of Unival trees . Example is here: https://crazycoderzz.wordpress.com/count-the-number-of-unival-subtrees-in-a-binary-tree/
+
 numStairs_dyn_rec.py : How many ways can you climb N stairs, if you can take some [I, J, K...] steps? : Dynamic
 
 numStairs_exhaustive.py : How many ways can you climb N stairs, if you can take some [I, J, K...] steps? : Exhaustive
@@ -80,6 +84,8 @@ numStairs_exhaustive.py : How many ways can you climb N stairs, if you can take 
 pascal.py : Print out the pascal triangle for value: n
 
 pow.py : Implement the pow function efficiently
+
+prime_factorize.py : Generate the list of prime factors for a given n. Example prime factors of 12: 2, 2, 3
 
 printAllPathsTree.py : Given a binary tree, print out all of its root-to-leaf paths one per line
 

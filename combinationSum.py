@@ -4,20 +4,17 @@
 
 def combinationSumRec(candidates, target, i, rlist, chosen):
     if target == 0:
-        rlist.append(chosen)
+        if list(chosen) not in rlist:
+            rlist.append(list(chosen))
         return
     if i >= len(candidates):
         return
     if target < 0:
         return
-
-    choice_1 = list(chosen)
-    choice_2 = list(chosen)
-
-    combinationSumRec(candidates, target-candidates[i], i, rlist, chosen + str(candidates[i]))
-
-    combinationSumRec(candidates, target-candidates[i], i+1, rlist, chosen + str(candidates[i]))
-
+    chosen.append(candidates[i])
+    combinationSumRec(candidates, target-candidates[i], i, rlist, chosen)
+    combinationSumRec(candidates, target-candidates[i], i+1, rlist, chosen)
+    chosen.pop(-1)
     combinationSumRec(candidates, target, i+1, rlist, chosen)
     return
     
@@ -28,7 +25,8 @@ def combinationSum(candidates, target):
     :rtype: List[List[int]]
     """
     rlist = []
-    combinationSumRec(candidates, target, 0, rlist, "")
+    chosen = []
+    combinationSumRec(candidates, target, 0, rlist, chosen)
     return rlist
 
 print(combinationSum([2, 3, 6, 7], 7))
