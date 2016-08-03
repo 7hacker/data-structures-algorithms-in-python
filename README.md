@@ -129,5 +129,7 @@ swallow.py : Generate Numeronyms for a word upto size 2: Example: "nailed" can b
 
 tree_postOrder_iterative.py : Given a binary tree, print the post-order traversal without using recursion
 
+tree_rightNext.py : Given a Full binary tree Populate the nextRight pointers in each node: http://www.geeksforgeeks.org/connect-nodes-at-same-level/
+
 wildcard.py : Given a string of 0's, 1's and ?'s print out all the possible results where ?'s can be substituted for 0 or 1
 
