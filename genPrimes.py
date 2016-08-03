@@ -18,11 +18,10 @@ class Primes:
 			for j in range(i*2, howmany, i):
 				self.primeBitArray[j] = 0
 		#magic! now you have all prime numbers in the bit array
-		
-	def getPrimeList(self):
-		ret = []
 		for i in range(self.n):
 			if self.primeBitArray[i]:
-				ret.append(i)
-		return ret
+				self.primeList.append(i)
+		
+	def getPrimeList(self):
+		return self.primeList
 
