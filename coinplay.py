@@ -32,8 +32,28 @@ def coin_play(coins, start, end, cache):
 		return max(choice1, choice2)
 
 
-coins = [149, 154, 63, 242, 12, 72, 65]
+def coin_play_iterative(cache, coins):
+	for i in range(len(coins)):
+		cache[i][i] = coins[i]
+	for i in range(len(coins)):
+		for j in range(i, len(coins)):
+			if i != j:
+				x = cache[i+2][j] 
+				y = cache[i+1][j-1]
+				z = cache[i][j-2]
+				cache[i][j] = max(
+					(coins[i] + min(x, y)),
+					(coins[j] + min(y, z))
+					)
+	print(cache)
+	return cache[0][len(coins)-1]
+
+
+
+
+coins = [8, 15, 3, 7]
 size = len(coins) + 2
 cache = [[0]*size for i in range(size)]
-print(coin_play(coins, 0, len(coins)-1, cache))
+#print(coin_play(coins, 0, len(coins)-1, cache))
+print(coin_play_iterative(cache, coins))
 callgraph.render("coin_play.png")

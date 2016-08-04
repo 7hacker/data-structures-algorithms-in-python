@@ -37,5 +37,5 @@ def interleave(s1, s2, match):
 	#return(rec_interleave(s1, 0, s2, 0, "", match))
 	return backtrack_interleave(s1, s2, 0, 0, match, 0)
 
-print(interleave("ab", "cd", "cadb"))
+print(interleave("xxz", "xxy", "xxzxxy"))
 callgraph.render("interleave.png")
