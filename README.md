@@ -27,6 +27,8 @@ bloomfilter.py : a bloom filter of /usr/share/dict/words
 
 brackets.py : http://stackoverflow.com/questions/727707/finding-all-combinations-of-well-formed-brackets
 
+BuildTree_PreorderInorder.py : Given the inorder and preorder traversal's of a tree in an array, build a tree . : http://www.geeksforgeeks.org/construct-tree-from-given-inorder-and-preorder-traversal/
+
 cloneBinaryTree.py : Clone a binary tree and return the root of the cloned tree
 
 cmd_example.py : How to build a Shell-esque Prompt interface using python
