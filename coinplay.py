@@ -3,28 +3,37 @@ you and your friend are playing a game with coins, such that each coin has a val
 '''
 from rcviz import callgraph, viz
 
-@viz
-def setAndFetch(coins, start, end, cache):
-	if start >= len(cache) or end >= len(cache):
-		return 0
-	if not cache[start][end]:
-		cache[start][end] = coin_play(coins, start, end, cache)
-	return cache[start][end]
-
 
 @viz
 def coin_play(coins, start, end, cache):
 	if start > end:
 		return 0
 	if start == end:
-		return setAndFetch(coins, start, end, cache)
+		if not cache[start][start]:
+			cache[start][start] = coins[start]
+		return cache[start][start]
 	else:
-		choice1 = coins[start] + min(setAndFetch(coins, start+2, end, cache), setAndFetch(coins, start+1, end-1, cache))
-		choice2 = coins[end] + min(setAndFetch(coins, start, end-2, cache), setAndFetch(coins, start+1, end-1, cache))
+		if not cache[start+2][end]:
+			cache[start+2][end] = coin_play(coins, start+2, end, cache)
+		choice1_a = cache[start+2][end]
+
+		if not cache[start+1][end-1]:
+			cache[start+1][end-1] = coin_play(coins, start+1, end-1, cache)
+		choice1_b = cache[start+1][end-1]
+
+		if not cache[start][end-2]:
+			cache[start][end-2] = coin_play(coins, start, end-2, cache)
+		choice2_a = cache[start][end-2]
+
+		choice2_b = cache[start+1][end-1]
+
+		choice1 = coins[start] + min(choice1_a, choice1_b)
+		choice2 = coins[end] + min(choice2_a, choice2_b)
 		return max(choice1, choice2)
 
 
 coins = [149, 154, 63, 242, 12, 72, 65]
-cache = [[None]*len(coins) for i in range(len(coins))]
+size = len(coins) + 2
+cache = [[0]*size for i in range(size)]
 print(coin_play(coins, 0, len(coins)-1, cache))
 callgraph.render("coin_play.png")
