@@ -46,6 +46,7 @@ def printFromRoot(n):
 			q.append(elem.r)
 
 def makeTree(inL, preL):
+	#seems like this works only on Full binary trees :(
 	if not preL:
 		return
 	if len(preL) == 1:
