@@ -8,7 +8,7 @@ MARKER = "'''"
 README_DUMP = """
 Auto Generated README File
 --------------------------
-Wrangling with a Python\n
+Wrangling with Python\n
 \t -- Just a bunch of katas with Python\n
 \t -- Algorithms + data structures + whatever else the mind wants to play with\n
 \t -- Some recursive code uses rcviz for visualization of a recursive tree - cool stuff! see the rcviz fork.\n

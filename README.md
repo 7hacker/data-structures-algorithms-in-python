@@ -1,7 +1,7 @@
 
 Auto Generated README File
 --------------------------
-Wrangling with a Python
+Wrangling with Python
 
 	 -- Just a bunch of katas with Python
 
@@ -34,6 +34,8 @@ cloneBinaryTree.py : Clone a binary tree and return the root of the cloned tree
 cmd_example.py : How to build a Shell-esque Prompt interface using python
 
 coin.py : how many ways to make change of k, given a set of coins
+
+coinchange.py : Given N coins make change, C with the minimum number of coins. Output the coins used to make the Change. If there are more than one such sets, output them all. The same coin can be used repeatedly
 
 coinplay.py : you and your friend are playing a game with coins, such that each coin has a value, and you can pick a coin from the start of a list or end of a list. If you begin first, and your friend is equally competent as you, what is the best choice you can make?
 
