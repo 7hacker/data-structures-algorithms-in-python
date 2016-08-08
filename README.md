@@ -67,6 +67,8 @@ hanoi.py : tower of haoi
 
 interleave.py : Given strings ab, cd and cadb, verify that cadb is an interleaved string of ab and cd. interleaved strings can be formed by choosing one element from each of the input strings, while mantaining the original order.cadb is a valid interleave, since the elements appear in the original order of the inputs ab and cd
 
+inverted_index_trie.py : Build an inverted index using a Trie
+
 isBST.py : Given a binary tree is it a Binary search tree?
 
 linkedlist.py : Linked lists in Python using a Node abstraction
