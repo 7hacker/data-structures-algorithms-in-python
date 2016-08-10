@@ -15,6 +15,8 @@ Wrangling with Python
 
 10bit10mil.py : Given 10 million 10 bit ints, sort these efficiently
 
+2sum.py : Given an array of integers, find two numbers such that they add up to a specific target number.
+
 3sum.py : Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
 
 __init__.py : so Imports can work inside this directory
