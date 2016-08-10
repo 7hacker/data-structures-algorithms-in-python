@@ -15,6 +15,8 @@ Wrangling with Python
 
 10bit10mil.py : Given 10 million 10 bit ints, sort these efficiently
 
+3sum.py : Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
+
 __init__.py : so Imports can work inside this directory
 
 alt_pn.py : Take a list of positive and negative integers, and return a list with negative numbers on left and positive numbers on right while also mantaining the order of numbers in input list
@@ -120,6 +122,8 @@ rope_cut.py : cut a rope of size n such that the product of the cuts is maximize
 search_concatenatedWords.py : given T = dogthecatcatthedog and A = ["the", "cat"] (n words of k length) output 3, 9 since the concatenation thecat and catthe is found in T at those indices. all n words should be part of the concatenation pattern, each word is size k and order does not matter
 
 segment_tree.py : A segment tree of Min values
+
+skiplist.py : A 4 leve skip list in python
 
 snake.py : print a string sinusoidally
 
