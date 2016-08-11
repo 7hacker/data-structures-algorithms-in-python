@@ -33,6 +33,8 @@ brackets.py : http://stackoverflow.com/questions/727707/finding-all-combinations
 
 BuildTree_PreorderInorder.py : Given the inorder and preorder traversal's of a tree in an array, build a tree . : http://www.geeksforgeeks.org/construct-tree-from-given-inorder-and-preorder-traversal/
 
+cake_thief.py : Maximize stealing cakes, in a bag of capacity C, where cakes are tuples of weight,profit
+
 cloneBinaryTree.py : Clone a binary tree and return the root of the cloned tree
 
 cmd_example.py : How to build a Shell-esque Prompt interface using python
@@ -79,11 +81,17 @@ linkedlist.py : Linked lists in Python using a Node abstraction
 
 longestSubstring2chars.py : what is the size of Longest substring with at most 2 distinct characters eg: s = "eceba" output : 3 ("ece")
 
+longestSubStrParanthesisMatch.py : find the longest substring with matching paranthesis. example: () is 2, ((()), is 4, ()(()) is 6, ((((( is 0, ()) is 2, ((((())(((() is 4
+
+lru.py : a prototype LRU-style KV store
+
 merge2arrs.py : Given 2 arrs: Short and Long of same size (n), that are already sorted return the sorted long array in linear time, merging the two arrays
 
 minimumWindowSubstring.py : Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n). For example, S = "ADOBECODEBANC" T = "ABC" . Minimum window is "BANC".
 
 minstack.py : implement a stack with the usual stack semantics but additionally also returns the Minimum value in the stack in O(1)
+
+nearestNeighbor.py : http://stackoverflow.com/questions/20398799/find-k-nearest-points-to-point-p-in-2-dimensional-plane
 
 nextPalin.py : Given a number what is the immediate next Palindrome number? Example, given 135, output should be 141
 
@@ -126,6 +134,8 @@ search_concatenatedWords.py : given T = dogthecatcatthedog and A = ["the", "cat"
 segment_tree.py : A segment tree of Min values
 
 skiplist.py : A 4 leve skip list in python
+
+slidingWindowMax.py : http://articles.leetcode.com/sliding-window-maximum
 
 snake.py : print a string sinusoidally
 
