@@ -77,6 +77,8 @@ inverted_index_trie.py : Build an inverted index using a Trie
 
 isBST.py : Given a binary tree is it a Binary search tree?
 
+knights_tour_shortestpath.py : You are given two inputs: starting location and ending location. The goal is to then calculate and print the shortest path that the knight can take to get to the target location.
+
 knightsTour.py : Knights tour
 
 linkedlist.py : Linked lists in Python using a Node abstraction
