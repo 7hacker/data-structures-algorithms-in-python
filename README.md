@@ -77,6 +77,8 @@ inverted_index_trie.py : Build an inverted index using a Trie
 
 isBST.py : Given a binary tree is it a Binary search tree?
 
+knightsTour.py : Knights tour
+
 linkedlist.py : Linked lists in Python using a Node abstraction
 
 longestSubstring2chars.py : what is the size of Longest substring with at most 2 distinct characters eg: s = "eceba" output : 3 ("ece")
