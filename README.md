@@ -77,6 +77,8 @@ inverted_index_trie.py : Build an inverted index using a Trie
 
 isBST.py : Given a binary tree is it a Binary search tree?
 
+K_updates.py : You are given the length of an array filled with all zeros initially. Now additions(updations) will be performed over given ranges on this array. Each updation will include the range and the number to be added over that range and will be of the form: [start index, end index, increment]. You have to return the final updated array after all the updations are done. Note: The time complexity should be O(n+k) where k is the number of updations and space complexity should be O(1) [https://discuss.leetcode.com/topic/224/range-addition]
+
 knights_tour_shortestpath.py : You are given two inputs: starting location and ending location. The goal is to then calculate and print the shortest path that the knight can take to get to the target location.
 
 knightsTour.py : Knights tour
