@@ -23,16 +23,16 @@ rop.write(README_DUMP)
 
 files = [f for f in os.listdir('.') if os.path.isfile(f)]
 for f in files:
-	filename, file_extension = os.path.splitext(f)
-	if file_extension == ".py":
-		lines = []
-		fop = open(f)
-		for i in range(NUM_LINES):
-			lines.append(fop.readline().rstrip())
-		if lines[0] == MARKER and lines[-1] == MARKER:
-			rop.write(f + " : " + lines[1] + "\n")
-			rop.write("\n")
-		else:
-			print("Missed file: " + f)
+    filename, file_extension = os.path.splitext(f)
+    if file_extension == ".py":
+        lines = []
+        fop = open(f)
+        for i in range(NUM_LINES):
+            lines.append(fop.readline().rstrip())
+        if lines[0] == MARKER and lines[-1] == MARKER:
+            rop.write(f + " : " + lines[1] + "\n")
+            rop.write("\n")
+        else:
+            print("Missed file: " + f)
 
 rop.close()

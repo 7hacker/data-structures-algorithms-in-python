@@ -2,23 +2,23 @@
 A Queue using Python Lists
 '''
 class Queue:
-	def __init__(self):
-		self.items = list()
-		return
+    def __init__(self):
+        self.items = list()
+        return
 
-	def enqueue(self, item):
-		self.items.insert(0,item)
-		return
+    def enqueue(self, item):
+        self.items.insert(0,item)
+        return
 
-	def dequeue(self):
-		return self.items.pop()
+    def dequeue(self):
+        return self.items.pop()
 
-	def size(self):
-		return len(self.items)
+    def size(self):
+        return len(self.items)
 
-	def printq(self):
-		print(self.items)
-		return
+    def printq(self):
+        print(self.items)
+        return
 
 q = Queue()
 q.enqueue(1)

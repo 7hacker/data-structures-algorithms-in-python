@@ -4,23 +4,23 @@ Write a recursive function for generating all permutations of an input string.  
 import sys
 
 def recursivePerm(s, chosen):
-	if len(chosen) == len(s):
-		for c in chosen:
-			sys.stdout.write(s[int(c)])
-		sys.stdout.write("\n")
-		return
-	chosen_list = list()
-	for c in chosen:
-		chosen_list.append(c)
-	i = 0
-	while i < len(s):
-		if str(i) not in chosen_list:
-			recursivePerm(s, chosen+str(i))
-		i = i + 1
+    if len(chosen) == len(s):
+        for c in chosen:
+            sys.stdout.write(s[int(c)])
+        sys.stdout.write("\n")
+        return
+    chosen_list = list()
+    for c in chosen:
+        chosen_list.append(c)
+    i = 0
+    while i < len(s):
+        if str(i) not in chosen_list:
+            recursivePerm(s, chosen+str(i))
+        i = i + 1
 
 
 s = "abb"
 i = 0
 while i < len(s):
-	recursivePerm(s, str(i))
-	i = i + 1
+    recursivePerm(s, str(i))
+    i = i + 1

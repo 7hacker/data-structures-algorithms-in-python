@@ -5,35 +5,35 @@ from rcviz import callgraph, viz
 
 
 def rec_merge(a, b, ai, bi, m, mi):
-	if ai >= len(a):
-		for x in range(bi, len(b)):
-			m.append(b[x])
-		return
-	if bi >= len(b):
-		for x in range(ai, len(a)):
-			m.append(a[x])
-		return
-	if a[ai] <= b[bi]:
-		m[mi] = a[ai]
-		rec_merge(a, b, ai+1, bi, m, mi+1)
-	else:
-		m[mi] = b[bi]
-		rec_merge(a, b, ai, bi+1, m, mi+1)
+    if ai >= len(a):
+        for x in range(bi, len(b)):
+            m.append(b[x])
+        return
+    if bi >= len(b):
+        for x in range(ai, len(a)):
+            m.append(a[x])
+        return
+    if a[ai] <= b[bi]:
+        m[mi] = a[ai]
+        rec_merge(a, b, ai+1, bi, m, mi+1)
+    else:
+        m[mi] = b[bi]
+        rec_merge(a, b, ai, bi+1, m, mi+1)
 
 def mergesort(a, low, high):
-	if low < high:
-		m1 = mergesort(a, low, (low+high/2))
-		m2 = mergesort(a, (low+high)/2 + 1, high)
-		mlen = 0
-		if m1:
-			mlen = mlen + len(m1)
-		if m2:
-			mlen = mlen + len(m2)
-		if mlen > 0:
-			mlen = mlen -1
-		merged = [None] * mlen
-		rec_merge(m1, m2, 0, 0, merged, 0)
-		return merged
+    if low < high:
+        m1 = mergesort(a, low, (low+high/2))
+        m2 = mergesort(a, (low+high)/2 + 1, high)
+        mlen = 0
+        if m1:
+            mlen = mlen + len(m1)
+        if m2:
+            mlen = mlen + len(m2)
+        if mlen > 0:
+            mlen = mlen -1
+        merged = [None] * mlen
+        rec_merge(m1, m2, 0, 0, merged, 0)
+        return merged
 
 
 #a = [1, 7, 11]

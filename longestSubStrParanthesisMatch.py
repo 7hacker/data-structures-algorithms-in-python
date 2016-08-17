@@ -5,25 +5,24 @@ find the longest substring with matching paranthesis. example: () is 2, ((()), i
 from stack import Stack
 
 def p_match(ex):
-	s = Stack()
-	maxcount = 0
-	count = 0
-	for c in ex:
-		if c == "(":
-			if s.size() > 0:
-				if count > maxcount:
-					maxcount = count
-				count = 0
-			print(count)
-			s.push(c)
-		else:
-			#assume its )
-			if s.size() and s.peek() == "(":
-				s.pop()
-				count = count + 2
-				print(count)
-	if count > maxcount:
-		maxcount = count
-	return maxcount
+    s = Stack()
+    maxcount = 0
+    count = 0
+    for c in ex:
+        if c == "(":
+            if s.size() > 0:
+                if count > maxcount:
+                    maxcount = count
+                count = 0
+            s.push(c)
+        else:
+            #assume its )
+            if s.size() and s.peek() == "(":
+                s.pop()
+                count = count + 2
+                print(count)
+    if count > maxcount:
+        maxcount = count
+    return maxcount
 
 print(p_match("()(())"))

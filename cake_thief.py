@@ -5,47 +5,47 @@ import sys
 from rcviz import callgraph, viz
 
 def iterative_thief(cake_tuples, capacity, cache):
-	for i in range(1, len(cache)):
-		maxProfit = -sys.maxint -1
-		for cake in cake_tuples:
-			if cake[0] <= i and i-cake[0] >= 0:
-				profit = cake[1] + cache[i-cake[0]]
-				if profit > maxProfit:
-					maxProfit = profit
-		cache[i] = maxProfit
-	return cache[-1]
+    for i in range(1, len(cache)):
+        maxProfit = -sys.maxint -1
+        for cake in cake_tuples:
+            if cake[0] <= i and i-cake[0] >= 0:
+                profit = cake[1] + cache[i-cake[0]]
+                if profit > maxProfit:
+                    maxProfit = profit
+        cache[i] = maxProfit
+    return cache[-1]
 
 @viz
 def max_duffel_bag_value_dyn(cake_tuples, capacity, cache):
-	if capacity == 0:
-		return cache[0]
-	if capacity < 0:
-		return -sys.maxint -1
-	else:
-		if cache[capacity] is None:
-			maxProfit = -sys.maxint -1
-			for cake in cake_tuples:
-				profit = cake[1] + max_duffel_bag_value_dyn(cake_tuples, capacity-cake[0],cache)
-				if profit > maxProfit:
-					maxProfit = profit
-			cache[capacity] = maxProfit
-			#max_duffel_bag_value.track(maxProfit=maxProfit)
-		return cache[capacity]
+    if capacity == 0:
+        return cache[0]
+    if capacity < 0:
+        return -sys.maxint -1
+    else:
+        if cache[capacity] is None:
+            maxProfit = -sys.maxint -1
+            for cake in cake_tuples:
+                profit = cake[1] + max_duffel_bag_value_dyn(cake_tuples, capacity-cake[0],cache)
+                if profit > maxProfit:
+                    maxProfit = profit
+            cache[capacity] = maxProfit
+            #max_duffel_bag_value.track(maxProfit=maxProfit)
+        return cache[capacity]
 
 @viz
 def max_duffel_bag_value(cake_tuples, capacity):
-	if capacity == 0:
-		return 0
-	if capacity < 0:
-		return -sys.maxint -1
-	else:
-		maxProfit = -sys.maxint -1
-		for cake in cake_tuples:
-			profit = cake[1] + max_duffel_bag_value(cake_tuples, capacity-cake[0])
-			if profit > maxProfit:
-				maxProfit = profit
-		max_duffel_bag_value.track(maxProfit=maxProfit)
-		return maxProfit
+    if capacity == 0:
+        return 0
+    if capacity < 0:
+        return -sys.maxint -1
+    else:
+        maxProfit = -sys.maxint -1
+        for cake in cake_tuples:
+            profit = cake[1] + max_duffel_bag_value(cake_tuples, capacity-cake[0])
+            if profit > maxProfit:
+                maxProfit = profit
+        max_duffel_bag_value.track(maxProfit=maxProfit)
+        return maxProfit
 
 
 

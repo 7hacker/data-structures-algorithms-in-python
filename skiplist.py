@@ -77,33 +77,33 @@ class SkipList:
                 
     def printList(self):
         for i in range(len(self.head.next)-1, -1, -1):
-			print("Level " + str(i))
-			x = self.head
-			while x.next[i] != None:
-				print x.next[i].elem,
-				x = x.next[i]
-			print '-------------'
+            print("Level " + str(i))
+            x = self.head
+            while x.next[i] != None:
+                print x.next[i].elem,
+                x = x.next[i]
+            print '-------------'
 
 
 class MyPrompt(Cmd):
-	def do_quit(self, args):
-		"""Quits the program."""
-		print "Quitting."
-		raise SystemExit
+    def do_quit(self, args):
+        """Quits the program."""
+        print "Quitting."
+        raise SystemExit
 
-	def do_insert(self,args):
-		"""Insert an integer into a skiplist"""
-		if len(args) != 0:
-			for w in args.split():
-				sl.insert(int(w.rstrip()))
+    def do_insert(self,args):
+        """Insert an integer into a skiplist"""
+        if len(args) != 0:
+            for w in args.split():
+                sl.insert(int(w.rstrip()))
 
-	def do_seeSkipList(self, args):
-		"""See your Skip List"""
-		sl.printList()
+    def do_seeSkipList(self, args):
+        """See your Skip List"""
+        sl.printList()
 
 
 sl = SkipList()
 if __name__ == '__main__':
-	prompt = MyPrompt()
-	prompt.prompt = '> '
-	prompt.cmdloop('Starting SkipList Shell...')
+    prompt = MyPrompt()
+    prompt.prompt = '> '
+    prompt.cmdloop('Starting SkipList Shell...')

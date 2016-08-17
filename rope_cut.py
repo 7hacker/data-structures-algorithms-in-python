@@ -3,9 +3,9 @@ cut a rope of size n such that the product of the cuts is maximized atleast one 
 '''
 
 def rec_rope_cut(cutAt, remainder_rope, product, size):
-	return rec_rope_cut()
+    return rec_rope_cut()
 
 def rope_cut(size):
-	return rec_rope_cut(0, size-1, 1, size)
+    return rec_rope_cut(0, size-1, 1, size)
 
 print(rope_cut(4))
