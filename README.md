@@ -31,6 +31,8 @@ bloomfilter.py : a bloom filter of /usr/share/dict/words
 
 brackets.py : http://stackoverflow.com/questions/727707/finding-all-combinations-of-well-formed-brackets
 
+buildingMinCost.py : There are N buildings with variable number of floors, and we want to build additional floors so that at least m buildings are of the same height.  Minimize the cost of building the floors.
+
 BuildTree_PreorderInorder.py : Given the inorder and preorder traversal's of a tree in an array, build a tree . : http://www.geeksforgeeks.org/construct-tree-from-given-inorder-and-preorder-traversal/
 
 cake_thief.py : Maximize stealing cakes, in a bag of capacity C, where cakes are tuples of weight,profit
