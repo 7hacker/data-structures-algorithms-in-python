@@ -127,6 +127,8 @@ queue_using_list.py : A Queue using Python Lists
 
 quicksort.py : Quicksort!
 
+rainfallChallenge.py : dat palantir Rain Fall Challenge
+
 readmeGen.py : Built this README File
 
 recursive_merge.py : a  merge sort with a recursive merge
