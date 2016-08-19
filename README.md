@@ -87,6 +87,8 @@ knightsTour.py : Knights tour
 
 linkedlist.py : Linked lists in Python using a Node abstraction
 
+longestRepeatedCharSubstr.py : find the longest repeated(char) substring in an input string. Eg: input = aabbbc;output = bbb , input = abc; output = a(or b or c), input=foofoofoo;output=oo
+
 longestSubstring2chars.py : what is the size of Longest substring with at most 2 distinct characters eg: s = "eceba" output : 3 ("ece")
 
 longestSubStrParanthesisMatch.py : find the longest substring with matching paranthesis. example: () is 2, ((()), is 4, ()(()) is 6, ((((( is 0, ()) is 2, ((((())(((() is 4
