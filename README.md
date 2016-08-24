@@ -113,6 +113,8 @@ numStairs_dyn_rec.py : How many ways can you climb N stairs, if you can take som
 
 numStairs_exhaustive.py : How many ways can you climb N stairs, if you can take some [I, J, K...] steps? : Exhaustive
 
+palindromeDecompisition.py : http://www.programcreek.com/2013/03/leetcode-palindrome-partitioning-java/
+
 pascal.py : Print out the pascal triangle for value: n
 
 pow.py : Implement the pow function efficiently
@@ -149,7 +151,7 @@ search_concatenatedWords.py : given T = dogthecatcatthedog and A = ["the", "cat"
 
 segment_tree.py : A segment tree of Min values
 
-skiplist.py : A 4 leve skip list in python
+skiplist.py : A skip list implemented in python borrowing from the fantastic explanation here: https://kunigami.wordpress.com/2012/09/25/skip-lists-in-python/
 
 slidingWindowMax.py : http://articles.leetcode.com/sliding-window-maximum
 

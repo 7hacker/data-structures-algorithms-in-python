@@ -20,9 +20,9 @@ def p_match(ex):
             if s.size() and s.peek() == "(":
                 s.pop()
                 count = count + 2
-                print(count)
+                #print(count)
     if count > maxcount:
         maxcount = count
     return maxcount
 
-print(p_match("()(())"))
+print(p_match("((((())(((()"))
