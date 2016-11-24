@@ -52,8 +52,8 @@ def print_coins(coins, amt, cache):
     print(min_list)
 
 
-coins = [9, 6, 5, 1]
-amt = 12
+coins = [1,2,3]
+amt = 4
 cachesize = amt+1
 cache = [None] * cachesize
 cache[0] = 0

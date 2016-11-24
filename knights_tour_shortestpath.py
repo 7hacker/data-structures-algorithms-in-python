@@ -32,8 +32,11 @@ class KT:
             return -1
         #use BFS:
         q = []
+        #keep a visited matrix for linear time
+        visited = [[False] * self.size for i in xrange(self.size)]
         if startx == endx and starty == endy :
             return 0
+        visited[startx][starty] = True
         q.append((startx, starty, 0))
         while len(q):
             (x, y, path) = q.pop(0)
@@ -42,7 +45,8 @@ class KT:
             for i in xrange(8):
                 nx = x + self.kx[i]
                 ny = y + self.ky[i]
-                if self.isSafe(nx, ny):
+                if self.isSafe(nx, ny) and not visited[nx][ny]:
+                    visited[nx][ny] = True
                     q.append((nx, ny, path+1))
 
         return -1

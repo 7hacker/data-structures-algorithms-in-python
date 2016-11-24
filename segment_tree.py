@@ -43,10 +43,12 @@ def querySegTree(t, i, j):
     if i > j:
         return None
     else:
+        pass
         
 
 
-nums = [1,3,5,7, 9, 11]
+#nums = [1,3,5,7, 9, 11]
+nums = [1,3,5,7]
 segTreeSize = find_segment_tree_size(len(nums))
 segTree = [None] * segTreeSize
 buildMinSegTree(segTree, nums, 0, len(nums)-1, 0)

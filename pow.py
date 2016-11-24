@@ -1,6 +1,9 @@
 '''
 Implement the pow function efficiently
 '''
+from rcviz import callgraph, viz
+
+@viz
 def foo_pow(d, p):
     if p == 1:
         return d
@@ -17,4 +20,5 @@ def foo_pow(d, p):
         else:
             return (t * t)/d
 
-print(foo_pow(5,5))
+print(foo_pow(5,-5))
+callgraph.render("pow.png")

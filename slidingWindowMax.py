@@ -2,30 +2,31 @@
 http://articles.leetcode.com/sliding-window-maximum
 '''
 def sliding_window_max(nums, w):
-    swl = []
-    q = []
-    for i in range(w):
-        q.append(nums[i])
-    cmax = max(q)
-    swl.append(cmax)
+    result = [] #result stored here
+    dq = [] #push and pop from front and end both. front will hold max
+    #build the window at first
+    dq.append(0)
+    for i in xrange(1,w):
+        while len(dq) and nums[i] > dq[-1]:
+            dq.pop(-1)
+        dq.append(i)
+    #add the first max to the result array
+    result.append(nums[dq[0]])
 
+    #slide the window
     for i in range(w, len(nums)):
-        out = q.pop(0)
-        q.append(nums[i])
-        if out != cmax and q[-1] <= cmax:
-            #cmax stays the same
-            swl.append(cmax)
-        elif q[-1] > cmax:
-            #cmax has changed and is the new entry
-            cmax = q[-1]
-            swl.append(cmax)
-        else:
-            #a new cmax needs to be computed
-            cmax = max(q)
-            swl.append(cmax)
-        
-    return swl
+        #add an item into the window: but we are interested only in valid entries
+        while len(dq) and nums[i] > dq[-1]:
+            dq.pop(-1)
+        dq.append(i)
+        #the front of the window must be in range
+        while len(dq) and i - dq[0] >= w:
+            dq.pop(0)
+        #result is now at front of queue
+        result.append(nums[dq[0]])
+    print(result)
+
 
 nums = [1, 3, -1, -3, 5, 3, 6, 7]
 w = 3
-print(sliding_window_max(nums, w))
+sliding_window_max(nums, w)

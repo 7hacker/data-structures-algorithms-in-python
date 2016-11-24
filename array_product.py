@@ -3,22 +3,30 @@ for an input array [1,2,3] return back an array where each i is a product of ele
 '''
 
 def array_product(nums):
-    result = [0] * len(nums)
-    #make the "after" products
-    result[0] = 1
-    count = 1
-    for i in range(len(nums)-2, -1, -1):
-        result[count] = result[count-1] * nums[i+1]
-        count = count+1
-    #the reverse of the result list has products of the 'after' category
-    result = result[::-1]
-    
-    #now do the before category:
-    before = 1
-    for i in range(1,len(nums)):
-        result[i] = result[i] * before * nums[i-1]
-        before = before * nums[i-1] 
-    print(result)
+    result = [1] * len(nums)
+    #going forward
+    i = 0
+    j = 1
+    rolling = 1
+    while j < len(result):
+        rolling = rolling * nums[i]
+        result[j] = result[j] * rolling
+        i = i + 1
+        j = j + 1
+
+    print result
+
+    #going backward
+    i = len(nums)-1
+    j = len(nums)-2
+    rolling = 1
+    while j > -1:
+        rolling = rolling * nums[i]
+        result[j] = result[j] * rolling
+        i = i -1
+        j = j -1 
+
+    print result
     return
 
 array_product([1,2,3,4,5])

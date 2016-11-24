@@ -2,10 +2,25 @@
 cut a rope of size n such that the product of the cuts is maximized atleast one cut must be made example: rope of size = 4 the best cut is 2,2 (2 * 2 = 4) as opposed to 3,1 (3* 1 = 3) or 1,3 or 1,2,1, 2,1,1, 1,1,1,1
 '''
 
-def rec_rope_cut(cutAt, remainder_rope, product, size):
-    return rec_rope_cut()
+def rope_cut(size, cache):
+	if size <= 1:
+		return cache[size]
+	else:
+		maxp = 0
+		k = 1
+		for i in xrange(size-1, -1, -1):
+			if not cache[i]:
+				cache[i] = k * rope_cut(i,cache)
+			maxp = max(maxp, cache[i])
+			k = k + 1
+		cache[size] = maxp
+		return cache[size]
 
-def rope_cut(size):
-    return rec_rope_cut(0, size-1, 1, size)
 
-print(rope_cut(4))
+n = 5
+cache = [None] * (n+1)
+cache[0] = 1
+cache[1] = 1
+print cache
+print(rope_cut(n, cache))
+print cache

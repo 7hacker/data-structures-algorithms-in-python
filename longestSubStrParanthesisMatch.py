@@ -25,4 +25,4 @@ def p_match(ex):
         maxcount = count
     return maxcount
 
-print(p_match("((((())(((()"))
+print(p_match("()(())()"))
