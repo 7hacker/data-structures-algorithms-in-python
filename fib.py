@@ -1,6 +1,36 @@
 from rcviz import callgraph, viz
 
 
+def fib_dyn_const_space(n, first, second):
+	for i in xrange(2, n+1):
+		res = first + second
+		first = second
+		second = res
+	return res
+'''
+input: n = 7 first = 0 second = 1
+for loop:
+	i = 2 : res = 0 + 1 = 1
+			first = 1
+			second = 1
+	i = 3: res = 1 + 1 = 2
+			first = 1
+			second = 2
+	i = 4: res = 1 + 2 = 3
+			first = 2
+			second = 3
+	i = 5: res = 2 + 3 = 5
+			first = 3
+			second = 5
+	i = 6: res = 3 + 5 = 8
+			first = 5
+			second = 8
+	i = 7: res = 5 + 8 = 13
+			first = 8
+			second = 13
+	return res (13)
+'''
+
 def fib_dyn(n,cache):
 	for i in xrange(2,len(cache)):
 		cache[i] = cache[i-1] + cache[i-2]
@@ -39,10 +69,10 @@ def fib_rec_cache(n,cache):
 #print fib_rec(7)
 #print fib_rec_cache(n,cache)
 n = 7
-cache = [None] * (n+1)
-cache[0] = 0
-cache[1] = 1
+#cache = [None] * (n+1)
+#cache[0] = 0
+#cache[1] = 1
 
-print fib_dyn(n,cache)
+print fib_dyn_const_space(n,0,1)
 
 #callgraph.render("fib-rec-cache.png")

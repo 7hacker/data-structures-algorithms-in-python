@@ -39,6 +39,8 @@ cake_thief.py : Maximize stealing cakes, in a bag of capacity C, where cakes are
 
 cloneBinaryTree.py : Clone a binary tree and return the root of the cloned tree
 
+closest_sum.py : Given a sorted array and a number x, find the pair in array whose sum is closest to x
+
 cmd_example.py : How to build a Shell-esque Prompt interface using python
 
 coin.py : how many ways to make change of k, given a set of coins
@@ -51,7 +53,11 @@ combinationSum.py :  Given a set of candidate numbers (C) and a target number (T
 
 countbits.py : count the bits set in a value n
 
+diameter_binTree.py : The diameter of a tree (sometimes called the width) is the number of nodes on the longest path between two leaves in the tree.The max diameter need not pass through the root. see: http://www.geeksforgeeks.org/diameter-of-a-binary-tree/
+
 dict_editdistance.py : Edit distance dicitonary problem: given a dictionary of words : {cat, bat, hat, bad, had} and two strings a, b: a = bat, b = had how to convert a->b by changing only 1 char at a time
+
+dictPattern.py : http://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/
 
 edit_distance_dynamic_rec.py : Edit distance using Dynamic programming
 
@@ -64,6 +70,8 @@ find_majority.py : Find the majority element in a list/array if the majority ele
 findMinInRotatedArray.py : Find the minimum element in a sorted array that has been rotated (rotated from the right end any number of times)
 
 genPrimes.py : Generate some Primes using a bit array - a cool technique I learnt
+
+getMaxQueue.py : How to build a Shell-esque Prompt interface using python
 
 graph.py : Build your own graph using this Graph Library
 
@@ -85,7 +93,7 @@ knights_tour_shortestpath.py : You are given two inputs: starting location and e
 
 knightsTour.py : Knights tour
 
-linkedlist.py : Linked lists in Python using a Node abstraction
+longestPalinpossible.py : http://www.geeksforgeeks.org/find-longest-palindrome-formed-by-removing-or-shuffling-chars-from-string/
 
 longestRepeatedCharSubstr.py : find the longest repeated(char) substring in an input string. Eg: input = aabbbc;output = bbb , input = abc; output = a(or b or c), input=foofoofoo;output=oo
 
@@ -107,11 +115,15 @@ nearestNeighbor.py : http://stackoverflow.com/questions/20398799/find-k-nearest-
 
 nextPalin.py : Given a number what is the immediate next Palindrome number? Example, given 135, output should be 141
 
+nqueens.py : nqueens problem
+
 num_univalTrees.py : Given a binary tree, return the number of Unival trees . Example is here: https://crazycoderzz.wordpress.com/count-the-number-of-unival-subtrees-in-a-binary-tree/
 
 numStairs_dyn_rec.py : How many ways can you climb N stairs, if you can take some [I, J, K...] steps? : Dynamic
 
 numStairs_exhaustive.py : How many ways can you climb N stairs, if you can take some [I, J, K...] steps? : Exhaustive
+
+orderString.py : https://www.careercup.com/question?id=5659201272545280
 
 palindromeDecompisition.py : http://www.programcreek.com/2013/03/leetcode-palindrome-partitioning-java/
 
@@ -141,6 +153,8 @@ recursive_merge.py : a  merge sort with a recursive merge
 
 regExMatcher.py : Build a regex Matcher for . (dot matches any single char) and * (asterix matches zero or more of the preceeding char). Given a string and a pattern(that contains dot and ansterix), output True or False if the string matches the pattern. Example : c*a*b matches aab and .* matches ab
 
+reverse_wordsSentence.py : given a sentence like this: "Coding for Interviews contains too many gifs." Returns the sentence with the order of the words reversed, like so: "gifs. many too contains Interviews for Coding" The catch was: your function should use O(1) space.
+
 revKlist.py : given a linked list and a value K, generate a linked list such that upto K elements are reversed. example for input 1,2,3,4,5,6,7,8 and k=5 the output list is: 5,4,3,2,1,8,7,6
 
 robber.py : What houses must a robber steal from, to get max value, if houses are indicated by value and adjacent houses cannot be stolen
@@ -150,6 +164,8 @@ rope_cut.py : cut a rope of size n such that the product of the cuts is maximize
 search_concatenatedWords.py : given T = dogthecatcatthedog and A = ["the", "cat"] (n words of k length) output 3, 9 since the concatenation thecat and catthe is found in T at those indices. all n words should be part of the concatenation pattern, each word is size k and order does not matter
 
 segment_tree.py : A segment tree of Min values
+
+segmentExists.py : https://www.careercup.com/question?id=5101591666360320
 
 skiplist.py : A skip list implemented in python borrowing from the fantastic explanation here: https://kunigami.wordpress.com/2012/09/25/skip-lists-in-python/
 
@@ -161,6 +177,8 @@ snake_ladder.py : snake & ladder game
 
 sortedListToTree.py : take a sorted list, and build a binary search tree
 
+split53.py : Given an array of ints, is it possible to divide the ints into two groups, so that the sum of the two groups is the same, with these constraints: all the values that are multiple of 5 must be in one group, and all the values that are a multiple of 3 (and not a multiple of 5) must be in the other. (No loops needed.)
+
 stack.py : Get a stack by using this Lib
 
 stringPermutations.py : Write a recursive function for generating all permutations of an input string.  To start, assume every character in the input string is unique.
@@ -168,6 +186,8 @@ stringPermutations.py : Write a recursive function for generating all permutatio
 subsets.py : print all subsets of a given array/list
 
 subtrees.py : what are the structurally unique binary trees that can be formed for size n?
+
+sumString.py : http://www.geeksforgeeks.org/calculate-sum-of-all-numbers-present-in-a-string/
 
 swallow.py : Generate Numeronyms for a word upto size 2: Example: "nailed" can be compressed to n4d, na3d, n3ed, n2led, na2ed, nai2d
 
