@@ -27,6 +27,7 @@ def shortest_throws(board, size):
 size = 30
 board = [-1] * size
 #Stairs
+'''
 board[2]  = 21;
 board[4]  = 7;
 board[10] = 25;
@@ -37,6 +38,6 @@ board[16] = 3;
 board[18] = 6;
 board[20] = 8;
 board[26] = 0;
-
+'''
 print shortest_throws(board, size)
 
