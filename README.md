@@ -37,6 +37,8 @@ BuildTree_PreorderInorder.py : Given the inorder and preorder traversal's of a t
 
 cake_thief.py : Maximize stealing cakes, in a bag of capacity C, where cakes are tuples of weight,profit
 
+candies.py : Alice is a kindergarten teacher. She wants to give some candies to the children in her class.  All the children sit in a line ( their positions are fixed), and each  of them has a rating score according to his or her performance in the class.  Alice wants to give at least 1 candy to each child. If two children sit next to each other, then the one with the higher rating must get more candies. Alice wants to save money, so she needs to minimize the total number of candies given to the children.
+
 cloneBinaryTree.py : Clone a binary tree and return the root of the cloned tree
 
 closest_sum.py : Given a sorted array and a number x, find the pair in array whose sum is closest to x

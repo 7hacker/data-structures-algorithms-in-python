@@ -19,5 +19,5 @@ def rec_wildcard(s, n, r):
 def wildcard(s):
     rec_wildcard(s,0, "")
 
-wildcard("????")
+wildcard("???")
 callgraph.render("wildcard.png")
