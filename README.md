@@ -67,6 +67,8 @@ edit_distance_exhaustive_rec.py : Edit distance using Exhaustive Search
 
 exp_creator.py : Given some number eg n= 222 and k=24 and a set of operations: Join, Add, Multiply, verify if k can be formed by applying the operations on n. The combination of operatsion on N leads to : 222 (all joins), 2+22(Add, Join), 2*22(Multiple,Join), 22+2,22*2 and so on..
 
+fib.py : Fibonacci series
+
 find_majority.py : Find the majority element in a list/array if the majority element appears atleast more than half the number of times
 
 findMinInRotatedArray.py : Find the minimum element in a sorted array that has been rotated (rotated from the right end any number of times)
@@ -82,6 +84,8 @@ graph_cycle.py : detect if a graph has a cycle or not
 graph_dfs.py : graph dfs traversal
 
 hanoi.py : tower of haoi
+
+howmanycoins.py : How many ways can you make change for N given a list of coins
 
 interleave.py : Given strings ab, cd and cadb, verify that cadb is an interleaved string of ab and cd. interleaved strings can be formed by choosing one element from each of the input strings, while mantaining the original order.cadb is a valid interleave, since the elements appear in the original order of the inputs ab and cd
 
@@ -104,6 +108,8 @@ longestSubstring2chars.py : what is the size of Longest substring with at most 2
 longestSubStrParanthesisMatch.py : find the longest substring with matching paranthesis. example: () is 2, ((()), is 4, ()(()) is 6, ((((( is 0, ()) is 2, ((((())(((() is 4
 
 lru.py : a prototype LRU-style KV store
+
+matrix_fun.py : A nice way to traverse matrices and operate on individual items
 
 merge2arrs.py : Given 2 arrs: Short and Long of same size (n), that are already sorted return the sorted long array in linear time, merging the two arrays
 

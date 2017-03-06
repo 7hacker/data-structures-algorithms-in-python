@@ -6,41 +6,43 @@ def alt_pn2(nums):
     return
 
 
+def update_ptr(p,nums):
+    if nums[p] > 0:
+        for i in xrange(p+1,len(nums)):
+            if nums[i] > 0:
+                return i
+    else:
+        for i in xrange(p+1, len(nums)):
+            if nums[i] < 0:
+                return i
+    return None
+
+
 def alt_pn(nums):
     #with extra space
-    res = list()
-    pi = 0
-    ni = 0
-    positiveTurn = True
+    res = []
+    count = 0
     
-    while pi < len(nums) and ni < len(nums):
-        while pi <len(nums) and nums[pi] < 0:
-            pi = pi + 1
-        while ni < len(nums) and nums[ni] > 0:
-            ni = ni + 1
-        if positiveTurn:
-            print("Adding: " + str(nums[pi]))
-            res.append(nums[pi])
-            pi = pi + 1
-            positiveTurn = False
-        else:
-            print("Adding: " + str(nums[ni]))
-            res.append(nums[ni])
-            ni = ni + 1
-            positiveTurn = True
-    
-    if pi < len(nums):
-        while pi < len(nums):
-            pi = pi + 1
-            res.append(nums[pi])
-    if ni < len(nums):
-        while ni < len(nums):
-            ni = ni + 1
-            res.append(nums[ni])
+    p_ptr = None
+    n_ptr = None
+    for i in xrange(len(nums)):
+        if nums[i] > 0:
+            p_ptr = i
+            break
+    for i in xrange(len(nums)):
+        if nums[i] < 0:
+            n_ptr = i
+            break
 
-    print(res)
-
-    return
+    while count < len(nums):
+        if p_ptr and count % 2 == 0:
+            res.append(nums[count])
+            p_ptr = update_ptr(p_ptr, nums)
+        elif n_ptr:
+            res.append(nums[count])
+            n_ptr = update_ptr(n_ptr, nums)
+        count = count + 1
+    return res
 
 
 print(alt_pn([2, 3, -4, -9, -1, -7, 1, -5, -6]))

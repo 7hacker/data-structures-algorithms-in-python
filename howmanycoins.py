@@ -1,3 +1,6 @@
+'''
+How many ways can you make change for N given a list of coins
+'''
 from rcviz import callgraph, viz
 
 @viz

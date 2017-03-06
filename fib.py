@@ -1,3 +1,6 @@
+'''
+Fibonacci series
+'''
 from rcviz import callgraph, viz
 
 

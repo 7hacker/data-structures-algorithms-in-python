@@ -32,4 +32,4 @@ def sumExists(a, target):
 	return False
 
 print sumExists([2, 7, 4, 9, 1, 3, 5], 2)
-
+print sumExists([5, 1, 2, -3, 7, -4], 0)

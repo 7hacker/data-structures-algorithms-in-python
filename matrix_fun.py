@@ -1,4 +1,6 @@
-
+'''
+A nice way to traverse matrices and operate on individual items
+'''
 import sys
 def process(m, i, j):
 	if j == 0:
