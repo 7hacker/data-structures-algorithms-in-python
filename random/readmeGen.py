@@ -6,10 +6,7 @@ import os, sys
 MARKER = "'''"
 README_DUMP = """
 # Auto Generated README File
-
 ### Wrangling with Python
---------------------------
---------------------------
 - Just a bunch of katas with Python\n
 - Algorithms + data structures + whatever else the mind wants to play with\n
 - Some recursive code uses rcviz for visualization of a recursive tree - cool stuff! see the rcviz fork.\n

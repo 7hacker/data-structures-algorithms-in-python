@@ -1,9 +1,6 @@
 
 # Auto Generated README File
-
 ### Wrangling with Python
---------------------------
---------------------------
 - Just a bunch of katas with Python
 
 - Algorithms + data structures + whatever else the mind wants to play with
