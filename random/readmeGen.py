@@ -3,7 +3,6 @@ Built this README File
 '''
 import os, sys
 
-NUM_LINES = 3
 MARKER = "'''"
 README_DUMP = """
 Auto Generated README File
@@ -37,7 +36,7 @@ for f in files:
                 else:
                     desc = desc + " " + lines[i].rstrip()
                 i = i + 1
-            rop.write(f + " : " + lines[1] + "\n")
+            rop.write(f + " : " + desc + "\n")
             rop.write("\n")
         else:
             print("Missed file: " + f)
