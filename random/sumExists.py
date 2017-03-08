@@ -1,3 +1,6 @@
+'''
+is there a contiguous subarray with a given sum in an integer array?
+'''
 def sumExists(a, target):
 	start = 0
 	end = 1

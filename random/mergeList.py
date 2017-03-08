@@ -1,3 +1,6 @@
+'''
+mergesort 2 linked lists
+'''
 import sys
 
 class Node:

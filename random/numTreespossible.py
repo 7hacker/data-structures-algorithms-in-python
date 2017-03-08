@@ -1,3 +1,6 @@
+'''
+how many structurally unique binary trees are possible with n nodes?
+'''
 from rcviz import callgraph, viz
 
 @viz

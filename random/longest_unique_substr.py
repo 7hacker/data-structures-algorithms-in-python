@@ -1,3 +1,6 @@
+'''
+length of the longest unique substring in a given string
+'''
 def longest_unique(s):
 	hs = set()
 	start = 0

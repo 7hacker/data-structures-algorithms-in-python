@@ -1,3 +1,6 @@
+'''
+what is the minimum window size of a given substring in a given string
+'''
 def reset_set(t):
 	d = dict()
 	for c in t:

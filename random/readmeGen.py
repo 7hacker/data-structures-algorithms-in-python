@@ -25,14 +25,20 @@ files = [f for f in os.listdir('.') if os.path.isfile(f)]
 for f in files:
     filename, file_extension = os.path.splitext(f)
     if file_extension == ".py":
-        lines = []
+        desc = ""
         fop = open(f)
-        for i in range(NUM_LINES):
-            lines.append(fop.readline().rstrip())
-        if lines[0] == MARKER and lines[-1] == MARKER:
+        lines = fop.readlines()
+        if lines[0].rstrip() == MARKER:
+            i = 1
+            done = False
+            while not done:
+                if lines[i].rstrip() == MARKER:
+                    done = True
+                else:
+                    desc = desc + " " + lines[i].rstrip()
+                i = i + 1
             rop.write(f + " : " + lines[1] + "\n")
             rop.write("\n")
         else:
             print("Missed file: " + f)
-
 rop.close()

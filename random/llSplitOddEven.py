@@ -1,3 +1,6 @@
+'''
+given a linked list with integers rearrange it such that even numbers are in the first half and odd numbers in the second half
+'''
 from linkedlist import Node,LinkedList
 
 

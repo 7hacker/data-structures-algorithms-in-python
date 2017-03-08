@@ -1,4 +1,6 @@
-
+'''
+Quick select Median finding
+'''
 def swap(a, i, j):
 	t = a[i]
 	a[i] = a[j]

@@ -1,3 +1,6 @@
+'''
+length of longest increasing sequence in an integer array
+'''
 def lis_dyn(a):
 	cache = [None] * len(a)
 	cache[-1] = 1

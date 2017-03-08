@@ -1,3 +1,6 @@
+'''
+Linked List library
+'''
 import sys
 
 class Node:

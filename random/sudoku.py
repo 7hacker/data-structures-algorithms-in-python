@@ -1,4 +1,6 @@
-
+'''
+sudoku!
+'''
 import sys
 def print_board(b):
 	for i in xrange(9):

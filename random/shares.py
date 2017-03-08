@@ -45,5 +45,5 @@ def rec_shareTrading(stocks):
 	return max(cache[1][1], cache[1][0])
 
 
-print(rec_shareTrading([1,2,100]))
+print(rec_shareTrading([10, 7, 5, 8, 11, 9]))
 #callgraph.render("shares.png")

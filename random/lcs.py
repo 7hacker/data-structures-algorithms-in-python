@@ -1,3 +1,6 @@
+'''
+length of the longest commmon subsequence in 2 strings
+'''
 def lcs_dyn(a,b):
 	result = [[0] * (len(b)+1) for i in xrange(len(a)+1)]
 

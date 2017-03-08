@@ -1,3 +1,6 @@
+'''
+print out all permutations of a given string & print out all the subsets formed by characters of a given string
+'''
 def _rec_permute(s, remaining):
 	if len(remaining) == 0:
 		print "".join(s)
@@ -36,5 +39,5 @@ def rec_subset(s):
 	return _rec_subset(s, 0, res)
 
 
-#rec_permute("dog")
+rec_permute("dog")
 rec_subset("dog")

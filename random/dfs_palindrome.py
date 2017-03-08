@@ -1,3 +1,6 @@
+'''
+print out all the palindromes in a given string
+'''
 from rcviz import callgraph, viz
 
 @viz
@@ -41,4 +44,4 @@ def partition(s):
 		return result
 
 print partition("madam")
-callgraph.render("dfspalindrome.png")
+#callgraph.render("dfspalindrome.png")

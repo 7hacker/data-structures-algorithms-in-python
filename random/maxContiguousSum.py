@@ -1,3 +1,6 @@
+'''
+what is the maximum Contiguous sum in a given array
+'''
 import sys
 
 def rec_maxContiguousSum(a,i,rolling_sum,max_sum):

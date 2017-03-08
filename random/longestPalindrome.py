@@ -1,4 +1,6 @@
-
+'''
+What is the length of the longest palindrome in a given string
+'''
 def showcache(c):
 	import sys
 	for i in xrange(len(c)):

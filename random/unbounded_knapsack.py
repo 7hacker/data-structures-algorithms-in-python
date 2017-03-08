@@ -1,3 +1,6 @@
+'''
+unbounded knapsack problem
+'''
 def _unbounded(a, i, k, cache):
     if i >= len(a):
         if not cache[i][k]:

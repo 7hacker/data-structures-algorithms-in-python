@@ -1,3 +1,6 @@
+'''
+Given an unsorted array of nonnegative integers, is there a subarray which adds to a given number. 
+'''
 def sum_exists(a, t):
 	start = 0
 	end = 1
