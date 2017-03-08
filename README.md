@@ -1,9 +1,9 @@
-README
---------------------------
-Algorithms & Data Structures in Python
+# README
 
-random/ : Problems from all over
+## Algorithms & Data Structures in Python
 
-leetcode/ : Problems from https://leetcode.com/
+#### random/ : Problems from all over
+
+#### leetcode/ : Attempted problems from https://leetcode.com/ 
 
 
