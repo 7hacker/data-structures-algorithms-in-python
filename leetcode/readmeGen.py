@@ -1,10 +1,8 @@
 '''
 Built this README File
 '''
-import os, sys
+import os, sys, pickle
 
-NUM_LINES = 3
-MARKER = "'''"
 README_DUMP = """
 Auto Generated README File
 --------------------------
@@ -17,6 +15,8 @@ README_FNAME = "README.md"
 rop = open(README_FNAME, 'w')
 rop.truncate()
 rop.write(README_DUMP)
+
+
 
 files = [f for f in os.listdir('.') if os.path.isfile(f)]
 for f in files:
