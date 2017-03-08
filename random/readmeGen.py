@@ -5,9 +5,9 @@ import os, sys
 
 MARKER = "'''"
 README_DUMP = """
-Auto Generated README File
---------------------------
-Wrangling with Python
+# Auto Generated README File
+
+### Wrangling with Python
 --------------------------
 --------------------------
 - Just a bunch of katas with Python\n

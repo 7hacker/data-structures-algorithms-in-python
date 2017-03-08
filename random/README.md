@@ -1,7 +1,7 @@
 
-Auto Generated README File
---------------------------
-Wrangling with Python
+# Auto Generated README File
+
+### Wrangling with Python
 --------------------------
 --------------------------
 - Just a bunch of katas with Python
