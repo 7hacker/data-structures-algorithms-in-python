@@ -7,7 +7,9 @@ MARKER = "'''"
 README_DUMP = """
 Auto Generated README File
 --------------------------
-Wrangling with Python\n
+Wrangling with Python
+--------------------------
+--------------------------
 - Just a bunch of katas with Python\n
 - Algorithms + data structures + whatever else the mind wants to play with\n
 - Some recursive code uses rcviz for visualization of a recursive tree - cool stuff! see the rcviz fork.\n
@@ -19,7 +21,7 @@ README_FNAME = "README.md"
 rop = open(README_FNAME, 'w')
 rop.truncate()
 rop.write(README_DUMP)
-
+index = 1
 files = [f for f in os.listdir('.') if os.path.isfile(f)]
 for f in files:
     filename, file_extension = os.path.splitext(f)
@@ -36,8 +38,9 @@ for f in files:
                 else:
                     desc = desc + " " + lines[i].rstrip()
                 i = i + 1
-            rop.write(f + " : " + desc + "\n")
+            rop.write(str(index) + ". *" + f + "* : " + desc + "\n")
             rop.write("\n")
+            index = index + 1
         else:
             print("Missed file: " + f)
 rop.close()
