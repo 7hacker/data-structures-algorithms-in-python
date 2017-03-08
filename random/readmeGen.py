@@ -39,7 +39,6 @@ for f in files:
                     desc = desc + " " + lines[i].rstrip()
                 i = i + 1
             rop.write(str(index) + ". *" + f + "* : " + desc + "\n")
-            rop.write("\n")
             index = index + 1
         else:
             print("Missed file: " + f)
