@@ -2,8 +2,8 @@
 
 ## Algorithms & Data Structures in Python
 
-#### random/ : Problems from all over
+- random/ : Problems from all over
 
-#### leetcode/ : Attempted problems from https://leetcode.com/ 
+- leetcode/ : Attempted problems from https://leetcode.com/ 
 
 
